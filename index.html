@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Institut Teknologi Del</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <img src="img/logo.png" alt="IT Del Logo" class="logo" />
+      <h1 class="site-title">Institut Teknologi Del</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#profile">Our Profile</a></li>
+          <li><a href="#contact">Message Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="banner">
+    <div class="slider">
+      <div class="slides">
+        <img src="img/banner1.jpg" alt="Campus view 1" class="slide active" />
+        <img src="img/banner2.jpg" alt="Campus view 2" class="slide" />
+        <img src="img/banner3.jpg" alt="Campus view 3" class="slide" />
+        <img src="img/banner4.jpg" alt="Campus view 4" class="slide" />
+      </div>
+      <div class="banner-content">
+        <h2 id="greeting">Hi, there!</h2>
+        <p>Welcome to the official profile website of Institut Teknologi Del.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="profile" class="profile container">
+    <h2>About Our School</h2>
+    <p>
+      Institut Teknologi Del is a private university located in Sitoluama, Toba, North Sumatra. It was founded by General (Ret.) Luhut Binsar Pandjaitan through Del Foundation to enhance skills and welfare in rural communities.
+    </p>
+
+    <h3>Vision</h3>
+    <p>To become a center of excellence in technology utilization for national advancement.</p>
+
+    <h3>Mission</h3>
+    <ul>
+      <li>Deliver superior and sustainable education.</li>
+      <li>Develop and disseminate knowledge and technology.</li>
+      <li>Act as a renewal agent in community development.</li>
+      <li>Implement the Three Pillars of Higher Education.</li>
+    </ul>
+
+    <h3>Study Programs</h3>
+    <ul class="program-list">
+      <li>Electrical Engineering</li>
+      <li>Informatics</li>
+      <li>Information Systems</li>
+      <li>Bioprocess Engineering</li>
+      <li>Metallurgical Engineering</li>
+      <li>Information Technology</li>
+      <li>Computer Technology</li>
+      <li>Management</li>
+    </ul>
+
+    <h3>Address</h3>
+    <p>Jl. Sisingamangaraja, Sitoluama, Laguboti, North Sumatra</p>
+
+    <h3>Email</h3>
+    <p><a href="mailto:info@del.ac.id">info@del.ac.id</a></p>
+  </section>
+
+  <section id="contact" class="contact container">
+    <h2>Message Us</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Your Name" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com" />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="08xxxxxxxxxx" />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required placeholder="Type your message here..."></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="formResult" class="form-result"></div>
+    <div id="messageDisplay" class="submitted-data"></div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Institut Teknologi Del. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
