@@ -1,3 +1,5 @@
+// === script.js (final version) ===
+
 let slideIndex = 0;
 const slides = document.querySelectorAll(".slide");
 
@@ -11,7 +13,6 @@ function showSlides() {
 document.addEventListener("DOMContentLoaded", () => {
   if (slides.length > 0) showSlides();
 
-  // FORM HANDLING
   const form = document.getElementById("contactForm");
   const formResult = document.getElementById("formResult");
   const messageDisplay = document.getElementById("messageDisplay");
@@ -39,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // ✅ SUKSES
       formResult.innerHTML = `<p style="color:green;">Thank you, <strong>${name}</strong>! Your message has been sent successfully.</p>`;
       messageDisplay.innerHTML = `
         <h3>Your Message:</h3>
@@ -50,16 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
 
       form.reset();
-    });
-  }
-
-  // TOGGLE NAVBAR (for mobile)
-  const toggle = document.querySelector(".menu-toggle");
-  const navLinks = document.querySelector(".nav-links");
-
-  if (toggle && navLinks) {
-    toggle.addEventListener("click", () => {
-      navLinks.classList.toggle("show");
     });
   }
 });
